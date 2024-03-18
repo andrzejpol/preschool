@@ -1,0 +1,8 @@
+.vscode
+package.json
+package-lock.json
+dist/
+public/
+node_modules/
+Pipelines/
+chart/
