@@ -1,15 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { StyledEngineProvider } from "@mui/material";
+import {
+  createTheme,
+  StyledEngineProvider,
+  ThemeProvider,
+} from "@mui/material";
 import { Provider } from "react-redux";
 import store from "./store";
+import muiTheme from "./core/styles/muiTheme";
+
+export const appTheme = createTheme(muiTheme);
 
 ReactDOM.createRoot(document.querySelector("#root")!).render(
   <React.StrictMode>
     <Provider store={store}>
       <StyledEngineProvider injectFirst>
-        <App />
+        <ThemeProvider theme={appTheme}>
+          <App />
+        </ThemeProvider>
       </StyledEngineProvider>
     </Provider>
   </React.StrictMode>
