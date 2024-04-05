@@ -1,5 +1,5 @@
-import { takeLatest } from "redux-saga/effects";
-import { configurationSagaActionTypes } from "../store/configuration/types";
+import { takeLatest } from 'redux-saga/effects';
+import { configurationSagaActionTypes } from '../store/configuration/types';
 
 function* initializedSagas() {}
 

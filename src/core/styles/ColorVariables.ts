@@ -1,5 +1,8 @@
-export const primaryColor = "#2292a4";
-export const secondaryColor = "#bdbf09";
-export const backgroundColor = "#f5efed";
-export const textColor = "#0f0a0a";
-export const accentColor = "#d96c06";
+export const textColor = '#4A4A4A';
+export const accentColor = '#EDB378';
+export const mainBackgroundColor = '#FFFFFF';
+export const secondaryBackgroundColor = '#F0F0F0';
+export const buttonColor = '#D9822B';
+export const buttonHoverColor = '#F2C94C';
+export const linkColor = '#3273DC';
+export const secondaryAccentColor = '#6C757D';

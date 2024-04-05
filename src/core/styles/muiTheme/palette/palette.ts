@@ -1,24 +1,24 @@
-import { PaletteOptions } from "@mui/material/styles/createPalette";
+import { PaletteOptions } from '@mui/material/styles/createPalette';
 import {
   accentColor,
-  backgroundColor,
-  primaryColor,
-  secondaryColor,
+  buttonColor,
+  mainBackgroundColor,
+  secondaryAccentColor,
   textColor,
-} from "../../ColorVariables";
+} from '../../ColorVariables';
 
 const palette: PaletteOptions = {
   primary: {
-    main: primaryColor,
+    main: buttonColor,
   },
   secondary: {
-    main: secondaryColor,
+    main: secondaryAccentColor,
   },
   text: {
     primary: textColor,
   },
   background: {
-    default: backgroundColor,
+    default: mainBackgroundColor,
   },
   action: {
     active: accentColor,

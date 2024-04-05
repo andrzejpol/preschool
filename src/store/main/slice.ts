@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { initialState } from "./initialState";
-import { main } from "./actions";
+import { createSlice } from '@reduxjs/toolkit';
+import { initialState } from './initialState';
+import { main } from './actions';
 
 const mainSlice = createSlice({
-  name: "main",
+  name: 'main',
   initialState,
   reducers: {
     main,

@@ -1,6 +1,6 @@
 export const getInitialState = () => ({
-  name: "name",
-  description: "description",
+  name: 'name',
+  description: 'description',
 });
 
 export const initialState = getInitialState();

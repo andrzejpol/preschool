@@ -1,11 +1,13 @@
-import GlobalStyle from "./core/styles/GlobalStyle";
-import { Typography } from "@mui/material";
+import GlobalStyle from './core/styles/GlobalStyle';
+import MainPage from './pages/MainPage';
 
-const App = () => (
-  <>
-    <GlobalStyle />
-    <Typography>Hello World</Typography>
-  </>
-);
+function App() {
+  return (
+    <>
+      <GlobalStyle />
+      <MainPage />
+    </>
+  );
+}
 
 export default App;
