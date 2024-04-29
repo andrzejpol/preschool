@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c77e55b6-9bf0-4508-8754-c826141fc1ad" name="Changes" comment="Remove old files" />
+    <list default="true" id="c77e55b6-9bf0-4508-8754-c826141fc1ad" name="Changes" comment="New clean configuration">
+      <change afterPath="$PROJECT_DIR$/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Kolorowy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Root/Root.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Root/Root.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Root/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ErrorPage/ErrorPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ErrorPage/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,13 +50,39 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\andrz\\AppData\\Roaming\\npm\\node_modules\\prettier",
     "ts.external.directory.path": "C:\\Users\\andrz\\WebstormProjects\\preschool\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andrz\WebstormProjects\preschool\src\pages" />
+      <recent name="C:\Users\andrz\WebstormProjects\preschool" />
+      <recent name="C:\Users\andrz\WebstormProjects\preschool\src\assets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714255149347</updated>
       <workItem from="1714255153726" duration="116000" />
-      <workItem from="1714255299172" duration="272000" />
+      <workItem from="1714255299172" duration="14227000" />
     </task>
     <task id="LOCAL-00001" summary="Remove old files">
       <created>1714255169783</created>
@@ -49,14 +101,33 @@
       <option name="project" value="LOCAL" />
       <updated>1714255169783</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New clean configuration">
+      <created>1714255625552</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714255625552</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove old files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove old files" />
+    <MESSAGE value="New clean configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="New clean configuration" />
   </component>
 </project>
