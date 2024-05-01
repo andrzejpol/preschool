@@ -31,7 +31,10 @@ export default function Root() {
         <nav>
           <ul>
             <li>
-              <Link to={`/contacts/1`}>Your Name</Link>
+              <Link to={`/login`}>Login Page</Link>
+            </li>
+            <li>
+              <Link to={`register`}>RegisterPage</Link>
             </li>
             <li>
               <Link to={`/contacts/2`}>Your Friend</Link>

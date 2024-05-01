@@ -4,21 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c77e55b6-9bf0-4508-8754-c826141fc1ad" name="Changes" comment="New clean configuration">
-      <change afterPath="$PROJECT_DIR$/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Kolorowy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Root/Root.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Root/Root.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Root/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ErrorPage/ErrorPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ErrorPage/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    <list default="true" id="c77e55b6-9bf0-4508-8754-c826141fc1ad" name="Changes" comment="Create Routing">
+      <change afterPath="$PROJECT_DIR$/src/components/Nav/Nav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Nav/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Attendance/Attendance.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Attendance/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LoginPage/LoginPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LoginPage/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/RegisterPage/RegisterPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/RegisterPage/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Root/Root.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +34,26 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Create Routing" />
+        <option name="rewordedMessage" value="Create Routing" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="8bf4b5585631e0f05e5ab649931c04778912a128" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,13 +67,17 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev/chakraUI-test",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\andrz\\AppData\\Roaming\\npm\\node_modules\\prettier",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
     "ts.external.directory.path": "C:\\Users\\andrz\\WebstormProjects\\preschool\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -92,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714255149347</updated>
       <workItem from="1714255153726" duration="116000" />
-      <workItem from="1714255299172" duration="14227000" />
+      <workItem from="1714255299172" duration="37874000" />
     </task>
     <task id="LOCAL-00001" summary="Remove old files">
       <created>1714255169783</created>
@@ -108,7 +131,21 @@
       <option name="project" value="LOCAL" />
       <updated>1714255625552</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create Routing">
+      <created>1714417917726</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714417917726</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create Routing">
+      <created>1714417958661</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714417958661</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +156,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev/chakraUI-test" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -128,6 +177,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove old files" />
     <MESSAGE value="New clean configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="New clean configuration" />
+    <MESSAGE value="Create Routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Routing" />
   </component>
 </project>

@@ -4,32 +4,48 @@ import './index.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Root from "./components/Root";
 import ErrorPage from "./pages/ErrorPage";
+import {ChakraProvider} from "@chakra-ui/react";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import Dashboard from "./pages/Dashboard";
+import Attendance from "./pages/Attendance";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path:"/",
+    element: <Dashboard/>,
+    errorElement: <ErrorPage/>
+  },
+  {
+    path:"/attendance",
+    element: <Attendance/>,
+    errorElement: <ErrorPage/>
+  },
+  {
+    path: "/root",
     element: <Root/>,
     errorElement: <ErrorPage />,
     children:[
       {
         path:"contacts/:contactId",
         element:<p>Hello</p>
-      }
+      },
     ]
   },
   {
     path:"/login",
-    element: <p>Login page</p>,
+    element: <LoginPage/>,
     errorElement: <ErrorPage/>
   },
   {
     path:"/register",
-    element: <p>Register page</p>
+    element: <RegisterPage/>,
+    errorElement: <ErrorPage/>
   },
   {
     path:"/logout",
     element: <p>Logout page</p>
-  }
+  },
 ])
 
 const root = ReactDOM.createRoot(
@@ -37,7 +53,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <ChakraProvider>
+      <RouterProvider router={router}/>
+    </ChakraProvider>
   </React.StrictMode>
 );
 
