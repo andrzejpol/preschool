@@ -21,12 +21,12 @@ import Nav from "../../components/Nav";
 import { useState } from "react";
 
 const Attendance = () => {
-  const childrenData = [
+  const initialChildrenData = [
     {
       id: 1,
       name: "Jan",
       lastname: "Kowalski",
-      group: "Grupa A",
+      group: "GrupaA",
       imageUrl: "",
       isPresent: false,
       plannedAbsence: false,
@@ -35,7 +35,7 @@ const Attendance = () => {
       id: 2,
       name: "Ola",
       lastname: "Nowak",
-      group: "Grupa B",
+      group: "GrupaB",
       imageUrl: "",
       isPresent: false,
       plannedAbsence: false,
@@ -44,7 +44,7 @@ const Attendance = () => {
       id: 3,
       name: "Zofia",
       lastname: "Krawczyk",
-      group: "Grupa A",
+      group: "GrupaA",
       imageUrl: "",
       isPresent: true,
       plannedAbsence: false,
@@ -53,7 +53,7 @@ const Attendance = () => {
       id: 4,
       name: "Sonia",
       lastname: "Muzyk",
-      group: "Grupa B",
+      group: "GrupaB",
       imageUrl: "",
       isPresent: false,
       plannedAbsence: true,
@@ -61,20 +61,22 @@ const Attendance = () => {
   ];
 
   const [filter, setFilter] = useState("ALL");
-  const [children, setChildren] = useState(childrenData);
+  const [children, setChildren] = useState(initialChildrenData);
 
   const name = "Dan";
 
-  const filteredChildren = childrenData.filter(
+  const filteredChildren = children.filter(
     (child) => filter === "ALL" || child.group === filter
   );
 
   const togglePresence = (id: number) => {
-    const newChildren = childrenData.map((child) =>
+    const newChildren = children.map((child) =>
       child.id === id ? { ...child, isPresent: !child.isPresent } : child
     );
     setChildren(newChildren);
   };
+
+  const groups = ["ALL", "GrupaA", "GrupaB"];
 
   return (
     <Box p="10" position="relative" width="100vw">
@@ -93,50 +95,50 @@ const Attendance = () => {
         </Box>
       </Flex>
       <Box p="10" width="full">
-        <Tabs
-          onChange={(index) => setFilter(["ALL", "Grupa A", "Grupa B"][index])}
-        >
+        <Tabs onChange={(index) => setFilter(groups[index])}>
           <TabList>
             <Tab>ALL</Tab>
             <Tab>Grupa A</Tab>
             <Tab>Grupa B</Tab>
           </TabList>
           <TabPanels>
-            <TabPanel>
-              <Table variant="simple">
-                <Thead>
-                  <Tr>
-                    <Th>Image</Th>
-                    <Th>Name</Th>
-                    <Th>Last Name</Th>
-                    <Th>Presence</Th>
-                    <Th>Planned Absence</Th>
-                  </Tr>
-                </Thead>
-                <Tbody>
-                  {filteredChildren.map((child) => (
-                    <Tr key={child.id}>
-                      <Td>photo</Td>
-                      <Td>{child.name}</Td>
-                      <Td>{child.lastname}</Td>
-                      <Td>
-                        <Switch
-                          isChecked={child.isPresent}
-                          onChange={() => togglePresence(child.id)}
-                        />
-                      </Td>
-                      <Td>
-                        {child.plannedAbsence ? (
-                          <Text color="red">Yes</Text>
-                        ) : (
-                          <Text>No</Text>
-                        )}
-                      </Td>
+            {groups.map((group) => (
+              <TabPanel>
+                <Table variant="simple">
+                  <Thead>
+                    <Tr>
+                      <Th>Image</Th>
+                      <Th>Name</Th>
+                      <Th>Last Name</Th>
+                      <Th>Presence</Th>
+                      <Th>Planned Absence</Th>
                     </Tr>
-                  ))}
-                </Tbody>
-              </Table>
-            </TabPanel>
+                  </Thead>
+                  <Tbody>
+                    {filteredChildren.map((child) => (
+                      <Tr key={child.id}>
+                        <Td>photo</Td>
+                        <Td>{child.name}</Td>
+                        <Td>{child.lastname}</Td>
+                        <Td>
+                          <Switch
+                            isChecked={child.isPresent}
+                            onChange={() => togglePresence(child.id)}
+                          />
+                        </Td>
+                        <Td>
+                          {child.plannedAbsence ? (
+                            <Text color="red">Yes</Text>
+                          ) : (
+                            <Text>No</Text>
+                          )}
+                        </Td>
+                      </Tr>
+                    ))}
+                  </Tbody>
+                </Table>
+              </TabPanel>
+            ))}
           </TabPanels>
         </Tabs>
       </Box>
