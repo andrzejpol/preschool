@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Avatar,
   Box,
@@ -22,6 +22,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import Carousel from "../../components/Carousel";
 
 const attendanceData = [
   { name: "Mon", Present: 22, Absent: 3 },
@@ -39,6 +40,13 @@ const events = [
 
 const Dashboard = () => {
   const name = "Dan";
+  const [eventsForChildren, setEvents] = useState([]);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:5000/events")
+      .then((response) => response.json())
+      .then((data) => setEvents(data));
+  }, []);
 
   return (
     <Box display="flex" flexDirection="column">
@@ -184,6 +192,14 @@ const Dashboard = () => {
             <Line type="monotone" dataKey="Present" stroke="green" />
             <Line type="monotone" dataKey="Absent" stroke="red" />
           </LineChart>
+        </ResponsiveContainer>
+      </Box>
+      <Box p="10" width="100vw">
+        <Heading size="md" mb="4">
+          Interesting music events
+        </Heading>
+        <ResponsiveContainer width="100%" height={300}>
+          <Carousel events={eventsForChildren} />
         </ResponsiveContainer>
       </Box>
     </Box>
